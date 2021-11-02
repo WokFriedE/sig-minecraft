@@ -1,9 +1,9 @@
-package com.mvye.baseplugin;
+package com.WokFriedE.BestPlugin;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class BasePlugin extends JavaPlugin {
+public class BestPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[BasePlugin]: Plugin is enabled!");

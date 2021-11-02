@@ -1,5 +1,5 @@
-name: BasePlugin
+name: BestPlugin
 version: 1.0
-author: Mvye
-main: com.mvye.baseplugin.BasePlugin
+author: WokFriedE
+main: com.WokFriedE.BestPlugin
 api-version: 1.17
