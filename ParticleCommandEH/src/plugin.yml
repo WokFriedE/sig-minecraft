@@ -1,0 +1,5 @@
+name: ParticleCommandEH
+version: 1.0
+author: WokFriedE
+main: com.wokfriede.particlecommandedeh.particlecommandeh
+api-version: 1.17
