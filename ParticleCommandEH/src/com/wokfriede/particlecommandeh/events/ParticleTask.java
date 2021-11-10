@@ -14,14 +14,14 @@ public class ParticleTask extends BukkitRunnable {
         this.player = player;//used to access player
         this.location = player.getLocation();
     }
-
+//Math.exp(-0.1*tick) * Math.sin(tick) + 1.5;
     @Override
     public void run(){
         tick = tick + 0.1*Math.PI;
 
         for (double theta = 0; theta <= 2*Math.PI; theta = theta + Math.PI/32){
             double x = tick*Math.cos(theta);
-            double y = Math.exp(-0.1*tick)*Math.sin(tick)+1.5;
+            double y = 1;
             double z = tick*Math.sin(theta);
             location.add(x,y,z);
             player.spawnParticle(Particle.FIREWORKS_SPARK, location, 1);
