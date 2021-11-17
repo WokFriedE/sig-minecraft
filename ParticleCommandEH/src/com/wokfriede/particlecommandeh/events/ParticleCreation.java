@@ -17,6 +17,7 @@ public class ParticleCreation implements Listener { //listener, looks for certai
     @EventHandler
     public static void onSneak(PlayerToggleSneakEvent event){
      final Player player = event.getPlayer();
-     new ParticleTask(player).runTaskTimer(plugin, 0,1);
+     if (!(player.hasMetadata("toggleParticleEH")))
+        new ParticleTask(player).runTaskTimer(plugin, 0,1);
     }
 }

@@ -1,5 +1,11 @@
 name: ParticleCommandEH
-version: 1.0
+version: 1.1
 author: WokFriedE
 main: com.wokfriede.particlecommandeh.ParticleCommandEH
 api-version: 1.17
+
+commands:
+  toggleParticleEH:
+    description: Toggles particle effect on sneak.
+    usage: /<command>
+    aliases: [tPEH]

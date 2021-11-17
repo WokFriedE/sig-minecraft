@@ -1,5 +1,6 @@
 package com.wokfriede.particlecommandeh;
 
+import com.wokfriede.particlecommandeh.commands.ParticleCommands;
 import com.wokfriede.particlecommandeh.events.ParticleCreation;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -10,8 +11,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class ParticleCommandEH extends JavaPlugin {
     @Override
     public void onEnable() { //when server turns on
-        getServer().getPluginManager().registerEvents(new ParticleCreation(this), this);
-        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[ParticleCommandEH]: Plugin is enabled");
+        getServer().getPluginManager().registerEvents(new ParticleCreation(this), this); //registers plugin
+        getCommand("toggleParticleEH").setExecutor(new ParticleCommands(this));//registers the command
+        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[ParticleCommandEH]: Plugin is enabled"); //prints the command readout
     }
 
     @Override
